@@ -1,0 +1,27 @@
+<div class="container">
+<div class="section is-dark">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="field">
+                <div class="control has-icons-left">
+                        <div class="button is-medium">
+                                <input type="date" formControlName="datePick" id="#my-element">
+                        </div>
+                </div>
+        </div>
+        <div class="field">
+                        <div class="control has-icons-left">
+                            <div class="select is-medium">
+                            <select>
+                                <option selected>ID Type</option>
+                                <option>SA ID Document</option>
+                                <option>Passport</option>
+                            </select>
+                            </div>
+                            <div class="icon is-small is-left">
+                            <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                    </div>
+        </form>
+</div>
+</div>

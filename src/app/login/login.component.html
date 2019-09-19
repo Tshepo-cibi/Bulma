@@ -1,0 +1,54 @@
+<div class="columns">
+    <div class="column is-primary">
+    </div>
+    <div class="column middle-section">
+            <section class="section is-dark">
+                <div class="box">
+                    <div class="container login-container">
+                        <h1 class="title">Login</h1>
+                        <h2 class="subtitle">
+                            Register your claim online.
+                        </h2>
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select is-medium">
+                                <select>
+                                    <option selected>ID Type</option>
+                                    <option>SA ID Document</option>
+                                    <option>Passport</option>
+                                </select>
+                                </div>
+                                <div class="icon is-small is-left">
+                                <i class="fas fa-globe"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="text" placeholder="ID Number">                            
+                            </div>
+                        </div>
+                        <div class="field" *ngIf = "passwordSelected">
+                            <div class="control">
+                                <input class="input is-medium" type="text" placeholder="Passport Number">                                                      
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="text" placeholder="OTP">                                                          
+                            </div>
+                        </div>
+                        <article class="message is-warning">
+                            <div class="message-body">
+                                <img src="../../assets/captcha.jpeg" class="captcha-image">
+                            </div>
+                        </article>
+                        <a class="button is-medium login-btn" (click) = "validateLogin()">Login</a>
+                        <br>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <div class="column">
+    </div>
+</div>
